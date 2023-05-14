@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" type="image/png" href="/favicon.png"/>
+    <meta name="viewport" content="width=device-width">
+    <title>TAXI CENOVNIK</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <center>
+    <h3>CENA ZA MESTO: </h3>
+    <input type="text" id="mestoin" onkeyup="mesto()"></input>
+    </center><br>
+    <ul id="myUL">
+  <li><a href="#" id="mesto">AL. RUDNIK</a><a href="#" class="km">4</a><a href="#" class="cena">250</a></li>
+  <li><a href="#" id="mesto">AL. BUJMIR</a><a href="#" class="km">5</a><a href="#" class="cena">250</a></li>
+  <li><a href="#" id="mesto">BOBOVIŠTE</a><a href="#" class="km">10</a><a href="#" class="cena">500</a></li>
+  <li><a href="#" id="mesto">BELI BREG</a><a href="#" class="km">18</a><a href="#" class="cena">900</a></li>
+  <li><a href="#" id="mesto">BRADARAC</a><a href="#" class="km">12</a><a href="#" class="cena">600</a></li>
+  <li><a href="#" id="mesto">BOVAN</a><a href="#" class="km">15</a><a href="#" class="cena">200-250din</a></li>
+  <li><a href="#" id="mesto">BELJA</a><a href="#" class="km">10</a><a href="#" class="cena">200-250din</a></li>
+  <li><a href="#" id="mesto">BANKOVAC</a><a href="#" class="km">13</a><a href="#" class="cena">200-250din</a></li>
+  <li><a href="#" id="mesto">VAKUP</a><a href="#" class="km">4</a><a href="#" class="cena">200-250din</a></li>
+  <li><a href="#" id="mesto">VUKAŠINOVAC</a><a href="#" class="km">15</a><a href="#" class="cena">200-250din</a></li>
+  <li><a href="#" id="mesto">VITKOVAC</a><a href="#" class="km">22</a><a href="#" class="cena">200-250din</a></li>
+  <li><a href="#" id="mesto">VRĆENOVICA</a><a href="#" class="km">19</a><a href="#" class="cena">200-250din</a></li>
+  <li><a href="#" id="mesto">V. DRENOVAC</a><a href="#" class="km">17</a><a href="#" class="cena">200-250din</a></li>
+  <li><a href="#" id="mesto">VUKANJA</a><a href="#" class="km">33</a><a href="#" class="cena">200-250din</a></li>
+  <li><a href="#" id="mesto">VRELO</a><a href="#" class="km">33</a><a href="#" class="cena">200-250din</a></li>
+  <li><a href="#" id="mesto">G. KRUPAC</a><a href="#" class="km">25</a><a href="#" class="cena">200-250din</a></li>
+  <li><a href="#" id="mesto">GLOGOVICA</a><a href="#" class="km">4</a><a href="#" class="cena">200-250din</a></li>
+  <li><a href="#" id="mesto">GREJAČ</a><a href="#" class="km">15</a><a href="#" class="cena">200-250din</a></li>
+  <li><a href="#" id="mesto">G. SUHOTNO</a><a href="#" class="km">10</a><a href="#" class="cena">200-250din</a></li>
+  <li><a href="#" id="mesto">G. PEŠČANICA</a><a href="#" class="km">13</a><a href="#" class="cena">200-250din</a></li>
+  <li><a href="#" id="mesto">GREDETIN</a><a href="#" class="km">15</a><a href="#" class="cena">200-250din</a></li>
+  <li><a href="#" id="mesto">G. LJUBEŠ</a><a href="#" class="km">15</a><a href="#" class="cena">200-250din</a></li>
+  <li><a href="#" id="mesto">GOLEŠNICA</a><a href="#" class="km">17</a><a href="#" class="cena">200-250din</a></li>
+  <li><a href="#" id="mesto">G. ADROVAC</a><a href="#" class="km">13</a><a href="#" class="cena">200-250din</a></li>
+  <li><a href="#" id="mesto">DELIGRAD</a><a href="#" class="km">19</a><a href="#" class="cena">200-250din</a></li>
+  <li><a href="#" id="mesto">D. ADROVAC</a><a href="#" class="km">8</a><a href="#" class="cena">200-250din</a></li>
+  <li><a href="#" id="mesto">D. LJUBEŠ</a><a href="#" class="km">17</a><a href="#" class="cena">200-250din</a></li>
+  <li><a href="#" id="mesto">D. SUHOTNO</a><a href="#" class="km">8</a><a href="#" class="cena">200-250din</a></li>
+  <li><a href="#" id="mesto">DAŠNICA</a><a href="#" class="km">19</a><a href="#" class="cena">200-250din</a></li>
+  <li><a href="#" id="mesto">DRAŽEVAC</a><a href="#" class="km">16</a><a href="#" class="cena">200-250din</a></li>
+  <li><a href="#" id="mesto">DOBRUJEVAC</a><a href="#" class="km">14</a><a href="#" class="cena">200-250din</a></li>
+  <li><a href="#" id="mesto">D. KRUPAC</a><a href="#" class="km">21</a><a href="#" class="cena">200-250din</a></li>
+  <li><a href="#" id="mesto">D. PEŠČANICA</a><a href="#" class="km">11</a><a href="#" class="cena">200-250din</a></li>
+  <li><a href="#" id="mesto">ŽITKOVAC</a><a href="#" class="km">4</a><a href="#" class="cena">200-250din</a></li>
+  <li><a href="#" id="mesto">JAKOVLJE</a><a href="#" class="km">21</a><a href="#" class="cena">200-250din</a></li>
+  <li><a href="#" id="mesto">JASENJE</a><a href="#" class="km">20</a><a href="#" class="cena">200-250din</a></li>
+  <li><a href="#" id="mesto">KRALJEVO</a><a href="#" class="km">4</a><a href="#" class="cena">200-250din</a></li>
+  <li><a href="#" id="mesto">KRUŠJE</a><a href="#" class="km">17</a><a href="#" class="cena">200-250din</a></li>
+  <li><a href="#" id="mesto">KORMAN</a><a href="#" class="km">13</a><a href="#" class="cena">200-250din</a></li>
+  <li><a href="#" id="mesto">KOPRIVNICA</a><a href="#" class="km">15</a><a href="#" class="cena">200-250din</a></li>
+  <li><a href="#" id="mesto">KULINA</a><a href="#" class="km">24</a><a href="#" class="cena">200-250din</a></li>
+  <li><a href="#" id="mesto">KATUN</a><a href="#" class="km">12</a><a href="#" class="cena">200-250din</a></li>
+  <li><a href="#" id="mesto">KAMENICA</a><a href="#" class="km">20</a><a href="#" class="cena">200-250din</a></li>
+  <li><a href="#" id="mesto">LIPOVAC</a><a href="#" class="km">21</a><a href="#" class="cena">200-250din</a></li>
+  <li><a href="#" id="mesto">LOĆIKA</a><a href="#" class="km">16</a><a href="#" class="cena">200-250din</a></li>
+  <li><a href="#" id="mesto">LUŽANE</a><a href="#" class="km">10</a><a href="#" class="cena">200-250din</a></li>
+  <li><a href="#" id="mesto">LOZNAC</a><a href="#" class="km">19</a><a href="#" class="cena">200-250din</a></li>
+  <li><a href="#" id="mesto">LJUPTEN</a><a href="#" class="km">28</a><a href="#" class="cena">200-250din</a></li>
+  <li><a href="#" id="mesto">M. DRENOVAC</a><a href="#" class="km">20</a><a href="#" class="cena">200-250din</a></li>
+  <li><a href="#" id="mesto">MORAVAC</a><a href="#" class="km">5</a><a href="#" class="cena">200-250din</a></li>
+  <li><a href="#" id="mesto">MOR. BUJMIR</a><a href="#" class="km">11</a><a href="#" class="cena">200-250din</a></li>
+  <li><a href="#" id="mesto">MOZGOVO</a><a href="#" class="km">16</a><a href="#" class="cena">200-250din</a></li>
+  <li><a href="#" id="mesto">NOZRINA</a><a href="#" class="km">8</a><a href="#" class="cena">200-250din</a></li>
+  <li><a href="#" id="mesto">PREKONOZI</a><a href="#" class="km">31</a><a href="#" class="cena">200-250din</a></li>
+  <li><a href="#" id="mesto">PRUGOVAC</a><a href="#" class="km">21</a><a href="#" class="cena">200-250din</a></li>
+  <li><a href="#" id="mesto">PORODIN</a><a href="#" class="km">30</a><a href="#" class="cena">200-250din</a></li>
+  <li><a href="#" id="mesto">PRĆILOVICA</a><a href="#" class="km">5</a><a href="#" class="cena">200-250din</a></li>
+  <li><a href="#" id="mesto">RUTEVAC</a><a href="#" class="km">13</a><a href="#" class="cena">200-250din</a></li>
+  <li><a href="#" id="mesto">RADEVAC</a><a href="#" class="km">20</a><a href="#" class="cena">200-250din</a></li>
+  <li><a href="#" id="mesto">RSOVAC</a><a href="#" class="km">29</a><a href="#" class="cena">200-250din</a></li>
+  <li><a href="#" id="mesto">STANCI</a><a href="#" class="km">17</a><a href="#" class="cena">200-250din</a></li>
+  <li><a href="#" id="mesto">STUBLINA</a><a href="#" class="km">10</a><a href="#" class="cena">200-250din</a></li>
+  <li><a href="#" id="mesto">SREZOVAC</a><a href="#" class="km">16</a><a href="#" class="cena">200-250din</a></li>
+  <li><a href="#" id="mesto">SUBOTINAC</a><a href="#" class="km">8</a><a href="#" class="cena">200-250din</a></li>
+  <li><a href="#" id="mesto">TRNJANE</a><a href="#" class="km">10</a><a href="#" class="cena">200-250din</a></li>
+  <li><a href="#" id="mesto">TEŠICA</a><a href="#" class="km">11</a><a href="#" class="cena">200-250din</a></li>
+  <li><a href="#" id="mesto">ĆIĆINA</a><a href="#" class="km">14</a><a href="#" class="cena">200-250din</a></li>
+  <li><a href="#" id="mesto">ČUKUROVAC</a><a href="#" class="km">22</a><a href="#" class="cena">200-250din</a></li>
+  <li><a href="#" id="mesto">ČESTA</a><a href="#" class="km">21</a><a href="#" class="cena">200-250din</a></li>
+  <li><a href="#" id="mesto">ŠURIĆ</a><a href="#" class="km">21</a><a href="#" class="cena">200-250din</a></li>
+  <li><a href="#" id="mesto">CRNA BARA</a><a href="#" class="km">24</a><a href="#" class="cena">200-250din</a></li>
+  <li><a href="#" id="mesto">R. BANJA</a><a href="#" class="km">32</a><a href="#" class="cena">200-250din</a></li>
+
+</ul>
+    <script src="script.js"></script>
+  </body>
+</html>

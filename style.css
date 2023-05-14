@@ -1,0 +1,46 @@
+#myUL {
+  /* Remove default list styling */
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myUL li{
+  border: 1px solid black; /* Add a border to all links */
+  margin-top: -1px; /* Prevent double borders */
+  text-decoration: none; /* Remove default text underline */
+  padding: 5px;
+  background-color:#eee;
+  font-size: 16px; 
+  color: black; 
+  display: block; 
+}
+
+#myUL li:hover:not(.header) {
+  background-color: #eee; /* Add a hover effect to all links, except for headers */
+}
+
+#mesto {
+  text-decoration: none; /* Remove default text underline */
+  font-size: 16px; /* Increase the font-size */
+  color: black;
+  width: 49%;
+  float: left;
+}
+.cena {
+  width:30%;
+  text-decoration: none; /* Remove default text underline */
+  font-size: 16px; /* Increase the font-size */
+  color: black;
+  font-weight: bold;
+  float:right;
+  text-align: right;
+}
+.km {
+  width: 40%;
+  text-align: center;
+  align-content:center;
+  text-decoration: none; /* Remove default text underline */
+  font-size: 16px; /* Increase the font-size */
+  color: black;
+}
